@@ -11,7 +11,7 @@ namespace CloudAssignment.Controllers
         private readonly IAmazonS3 _s3Client;
         public FileController()
         {
-            var credentials = new BasicAWSCredentials("AKIAYRW3ZEXWEJSMXCRO", "PNTdo0CyFQqikJT120M/n+R0oHxx5BEG4HQ/hPyt");
+            var credentials = new BasicAWSCredentials("Secret Key", "Private key");
             _s3Client = new AmazonS3Client(credentials, Amazon.RegionEndpoint.USWest1);
         }
         [HttpGet("get-all")]
